@@ -1,0 +1,5 @@
+allure-pytest
+mysql-connector-python
+pytest
+requests
+selenium
