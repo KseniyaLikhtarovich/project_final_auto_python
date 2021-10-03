@@ -19,7 +19,7 @@ def browser():
 # База данных
 @pytest.fixture()
 def db():
-    db = mysql.connect(host="127.0.0.1",
+    db = mysql.connect(host="localhost",
                        user="root",
                        passwd="",
                        database="litecart")
