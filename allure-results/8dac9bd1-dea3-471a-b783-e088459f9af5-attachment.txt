@@ -1,2 +1,0 @@
-{'id': 1000, 'username': 'Casey_Li', 'firstName': 'Casey', 'lastName': 'Li', 'email': 'test@test.com', 'password': 'test123', 'phone': '+375332343565', 'userStatus': 0}
-{'id': 1000, 'username': 'Casey_Li123', 'firstName': 'Casey', 'lastName': 'Li', 'email': 'test@test.com', 'password': 'test123', 'phone': '+375332343565', 'userStatus': 0}
