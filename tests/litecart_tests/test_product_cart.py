@@ -6,7 +6,7 @@ import allure
 
 
 @allure.feature("Check the user can add products to cart and remove them")
-def test_add_products_to_cart_and_remove_them(browser, tc_2_data):
+def test_add_products_to_cart_and_remove_them(browser, test_case_2_data):
      with allure.step("Open main page"):
         main_page = MainPage(browser)
         main_page.open_main_page()
@@ -15,22 +15,22 @@ def test_add_products_to_cart_and_remove_them(browser, tc_2_data):
 
      with allure.step("Check categories page is displayed"):
         categories_page = CategoriesPage(browser)
-        categories_page.categories_page(tc_2_data)
+        categories_page.categories_page(test_case_2_data)
      with allure.step("Open subcategory_page"):
         categories_page.open_subcategory_page()
 
      with allure.step("Check subcategory page is displayed"):
         subcategory_page = SubcategoryPage(browser)
-        subcategory_page.subcategory_page(tc_2_data)
+        subcategory_page.subcategory_page(test_case_2_data)
      with allure.step("Check the user can add a product to cart"):
-        subcategory_page.add_to_cart(tc_2_data)
+        subcategory_page.add_to_cart(test_case_2_data)
      with allure.step("Open cart page"):
         subcategory_page.open_cart_page()
 
      with allure.step("Check cart page is displayed"):
         cart_page = CartPage(browser)
-        cart_page.cart_page(tc_2_data)
+        cart_page.cart_page(test_case_2_data)
      with allure.step("Check the user can add products and update the order"):
-        cart_page.add_products_and_update_order(tc_2_data)
+        cart_page.add_products_and_update_order(test_case_2_data)
      with allure.step("Check the user can remove products from the cart"):
-        cart_page.cart_is_empty(tc_2_data)
+        cart_page.cart_is_empty(test_case_2_data)

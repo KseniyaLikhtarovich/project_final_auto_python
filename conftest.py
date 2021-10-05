@@ -36,8 +36,8 @@ def cursor(db):
 
 # Данные
 @pytest.fixture()
-def tc_1_data():
-    tc_1_data = {
+def test_case_1_data():
+    test_case_1_data = {
         "input": {
             "email": "test@test.com",
             "password": "pwd1user",
@@ -49,12 +49,12 @@ def tc_1_data():
             "changes": "Changes saved successfully."
         }
     }
-    return tc_1_data
+    return test_case_1_data
 
 
 @pytest.fixture()
-def tc_2_data():
-    tc_2_data = {
+def test_case_2_data():
+    test_case_2_data = {
         "input": {
             "quantity": "3"
         },
@@ -68,7 +68,7 @@ def tc_2_data():
             "empty_cart_msg": "There are no items in your cart."
         }
     }
-    return tc_2_data
+    return test_case_2_data
 
 
 @pytest.fixture(scope="class")
